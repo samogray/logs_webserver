@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+    <meta charset="utf-8" />
+    <title>Logs</title>
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" />
+
+   <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css" />
+	<link rel="stylesheet" href="libs/font-awesome-4.2.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/fonts.css" />
+	<link rel="stylesheet" href="css/log.css" />
+	<link rel="stylesheet" href="css/media.css" />
+    <link rel="stylesheet" href="css/jquery-ui.min.css" />
+
+</head>
+<body>
+<div class="container-fluid">
+        <div class="row">
+
+            <div class="header1">
+                <h1 class="logo">Logs Viewer...</h1>
+                <div class="ico"><i class="fa fa-bug fa-2x"></i></div>
+            </div>
+        </div>
+
+        <div class="row" id="content">
+            <nav class="navbar navbar-default">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-8">
+                        <div class="wraper">
+                            <div class="btn-group btn-group-md folder" id="folder_group" role="group" aria-label="...">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2"></div>
+            </nav>
+        </div>
+
+<div class="row">
+    <nav class="navbar navbar-default menu">
+        <a class="btn btn-default list hidden " href="#" id="file_hiden"> File list <i class="fa fa-list"></i> </a>
+            <a class="btn btn-default btn-md" id="connect" href="#" role="button">Connect <i class="fa fa-sign-in"></i></a>
+            <a class="btn btn-default btn-md" id="disconnect" href="#" role="button">Disconnect <i class="fa fa-sign-out"></i></a>
+            <a class="btn btn-default btn-md" id="refresh" href="#" role="button"><i class="fa fa-refresh"></i></a>
+            <span class="date">Choice date <input type="checkbox" id="chdate"><input type="text" name="date" id="mydate" disabled="disabled"> </span>
+            <div class="tb">
+                <span class="label label-default hidden" id="file_name"></span>
+                <span class="label label-default hidden" id="date_file"></span>
+                <span class="label label-default hidden" id="ch_file"></span>
+           </div>
+
+    </nav>
+</div>
+    <div class="row">
+        <div class="left">
+                <div class="panel-body">
+                <div class="list-group" id="list_file"></div>
+                </div>
+        </div>
+
+        <div class="right hidden" id="default">
+            <pre id="logs"></pre>
+        </div>
+    </div>
+</div>
+<div class="back_load"></div>
+<div class="loader">
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+<div class="up"><a href="#"><i class="fa fa-angle-double-up fa-3x"></i></a></div>
+
+<script src="libs/jquery/jquery-1.11.2.min.js"></script>
+<script src="js/log.js"></script>
+ <script src="js/jquery-ui.min.js"></script>
+<script src="js/sockjs-0.3.4.js"></script>
+<script src="js/stomp.js"></script>
+<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>

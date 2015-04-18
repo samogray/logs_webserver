@@ -1,0 +1,121 @@
+*::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+body {
+	font-family: "RobotoRegular", sans-serif;
+	font-size: 16px;
+}
+.location {
+position: absolute;
+    right: 20px;
+    top: 5px;
+}
+
+
+.f32 .flag{
+    cursor: pointer;
+    display:inline-block;
+    height:32px;
+    width:32px;
+    vertical-align:text-top;
+    line-height:32px;
+    background:url(../images/flags32.png) no-repeat;
+    opacity:0.5;
+}
+.f32 .flag:hover{
+    opacity: 1.0;
+}
+
+.f32 .ua{background-position:0 -7264px;}
+.f32 .us{background-position:0 -7328px;}
+.f32 .ru{background-position:0 -6208px;}
+
+#login, .page {
+    display: none;
+    position: relative;
+    width: 100%;
+    background-color: #151C26;
+    color: #DDE3F3;
+    font-family: "RobotoMedium", sans-serif;
+  }
+.loginIn{
+    font-family: "RobotoLight", sans-serif;
+    height:300px;
+    width: 400px;
+    margin:0 auto;
+    top: 20px;
+    margin-top: 200px;
+    padding-left: 10px;
+}
+.loginIn h3 {
+    /* margin: 0 auto; */
+    text-align: center;
+    margin-bottom: 10px;
+}
+.loginIn input {
+    margin-left: 10px;
+    width: 214px;
+    color: #40475C ;
+}
+input[type="password"] {
+    margin-left: -5px;
+}
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-left: 47px;
+    font-weight: 700;
+    margin-right: 17px;
+    margin-bottom: 10px;
+}
+.button {
+    text-decoration: none;
+    display: block;
+    background-color: #40475C;
+    padding: 6px 114px;
+    width: 280px;
+    border-radius: 7px;
+    font-size: 21px;
+    /* margin-right: 10px; */
+    /* margin-top: 10px; */
+    color: #DDE3F3;
+    margin: 18px auto;
+}
+.button:hover{
+    background-color: #7488C5;
+    border: 1px solid #40475C;
+    text-decoration: none;
+    color: #DDE3F3;
+}
+a.button{
+    text-decoration: none;
+}
+span {
+   margin-left: 61px;
+}
+.footer {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    font-family: "RobotoLight", sans-serif;
+    color: #5C687E;
+    font-size: 11px;
+}
+img {
+    vertical-align: middle;
+    margin: 20px 47px;
+}
+.header {
+    background-color: #2B2F38;
+    border-bottom: 2px solid #F69D77;
+}
+.some{
+
+}
